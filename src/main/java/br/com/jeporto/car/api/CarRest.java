@@ -41,7 +41,7 @@ public class CarRest {
 	}
 
 	@DeleteMapping(value = "/{id}")
-	public ResponseEntity<String> delete(@PathVariable Long id) {
+	public ResponseEntity<String> delete(@PathVariable String id) {
 		service.delete(id);
 		return ResponseEntity
 							.status(HttpStatus.OK)

@@ -1,23 +1,20 @@
 package br.com.jeporto.car.api;
 
-public class Car {
+import java.io.Serializable;
 
-	private Long id;
+public class Car implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+
+	private String id;
 
 	private String name;
 
-	public Car() {}
-	
-	public Car(Long id, String name) {
-		this.id = id;
-		this.name = name;
-	}
-
-	public Long getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
